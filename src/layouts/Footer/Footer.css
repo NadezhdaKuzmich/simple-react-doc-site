@@ -1,0 +1,15 @@
+.footer {
+  position: relative;
+  background: rgb(32, 35, 41);
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.footer h3 {
+  color: white;
+}
+
+.footer p {
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.434);
+}

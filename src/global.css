@@ -1,0 +1,29 @@
+* {
+  font-family: Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1480px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  padding-right: 0;
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "main main sidebar";
+}
+
+.brand {
+  color: #5BCAE8;
+}
