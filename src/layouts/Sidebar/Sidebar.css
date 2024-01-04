@@ -5,7 +5,7 @@
   border: 1px solid rgb(246, 246, 246);
   border-radius: 8px;
   padding: 20px 65px 20px 40px;
-  margin: 140px 5px 5px;
+  margin: 5px;
 }
 
 .sidebar ul {
@@ -32,11 +32,13 @@ a::before {
   transition: all 0.4s ease;
 }
 
-a:hover {
+a:hover,
+a.active {
   color: #5bcae8;
 }
 
-a:hover::before {
+a:hover::before,
+a.active::before {
   content: "";
   position: absolute;
   left: -10px;

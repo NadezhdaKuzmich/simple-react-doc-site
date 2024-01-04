@@ -4,6 +4,7 @@
 }
 
 body {
+  background: rgb(32, 35, 41);
   padding: 0;
   margin: 0;
 }
@@ -14,16 +15,39 @@ body {
   margin: 0 auto;
 }
 
+main {
+  background: #fff;
+}
+
+.main {
+  padding: 10px 40px 40px 0;
+  margin: 15px 15px 15px 0;
+  grid-area: main;
+}
+
+.main section {
+  padding: 20px;
+  margin: 5px;
+}
+
 .grid-container {
   padding-right: 0;
 }
 
 .wrapper {
+  min-height: 82vh;
   display: grid;
-  justify-content: center;
+  justify-content: space-between;
   grid-template-areas: "main main sidebar";
+  padding: 134px 0 0;
 }
 
-.brand {
-  color: #5BCAE8;
+.brand,
+h1.brand {
+  color: #5bcae8;
+}
+
+.user-page img {
+  max-width: 200px;
+  max-height: 200px;
 }
