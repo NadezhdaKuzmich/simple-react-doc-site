@@ -6,7 +6,10 @@ import StateHook from "./Pages/StateHookPage/StateHook";
 import About from "./Pages/About/About";
 import Community from "./Pages/Community/Community";
 import Resources from "./Pages/Resources/Resources";
+import Users from "./Pages/Users/Users";
+import User from "./Pages/Users/UserPage";
 import ErrorPage from "./Pages/Error/Error";
+import usersData from "./data/users.json";
 
 import {
   createBrowserRouter,
@@ -33,6 +36,11 @@ const Root = () => {
   );
 };
 
+const loader = ({ params }) => {
+  const user = usersData.filter((usr) => usr.id === params.userId);
+  return user[0];
+};
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
@@ -41,6 +49,13 @@ const router = createBrowserRouter(
       <Route path="community" element={<Community />} />
       <Route path="resources" element={<Resources />} />
       <Route path="about" element={<About />} />
+      <Route path="users" element={<Users />} />
+      <Route
+        path="users/:userId"
+        loader={loader}
+        element={<User />}
+        errorElement={<ErrorPage />}
+      />
       <Route path="*" element={<ErrorPage />} />
     </Route>
   )
