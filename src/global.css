@@ -102,6 +102,10 @@ ul {
   margin-right: 8px;
 }
 
+.user-page p {
+  color: #3f3f3f;
+}
+
 .user-page img {
   max-width: 200px;
   max-height: 200px;
@@ -109,5 +113,5 @@ ul {
 }
 
 .user-page b {
-  color: #979999;
+  color: #0b576a;
 }
