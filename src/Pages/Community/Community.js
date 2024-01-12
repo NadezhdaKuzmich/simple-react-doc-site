@@ -1,5 +1,3 @@
-import "./Community.css";
-
 function Community() {
   return (
     <div className="main">

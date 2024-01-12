@@ -1,5 +1,3 @@
-import "./StateHook.css";
-
 function StateHook() {
   return (
     <div className="main">

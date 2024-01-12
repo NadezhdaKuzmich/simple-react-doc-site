@@ -10,13 +10,19 @@ const User = () => {
 
   return (
     <div className="main user-page">
-      <div>
+      <div className="btn-back">
         <Link to="/users">Back</Link>
       </div>
       <img src={user.img} alt="avatar" />
-      <h2>User: {user.name}</h2>
-      <p>Age: {user.age}</p>
-      <p>Email: {user.email}</p>
+      <p>
+        <b>User:</b> {user.name}
+      </p>
+      <p>
+        <b>Age:</b> {user.age}
+      </p>
+      <p>
+        <b>Email:</b> {user.email}
+      </p>
     </div>
   );
 };
