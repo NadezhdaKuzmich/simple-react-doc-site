@@ -1,14 +1,14 @@
 import Header from "./layouts/Header/Header";
-import Welcome from "./Pages/Welcome/Welcome";
+import Welcome from "./pages/Welcome/Welcome";
 import Sidebar from "./layouts/Sidebar/Sidebar";
 import Footer from "./layouts/Footer/Footer";
-import StateHook from "./Pages/StateHookPage/StateHook";
-import About from "./Pages/About/About";
-import Community from "./Pages/Community/Community";
-import Resources from "./Pages/Resources/Resources";
-import Users from "./Pages/Users/Users";
-import User from "./Pages/Users/UserPage";
-import ErrorPage from "./Pages/Error/Error";
+import StateHook from "./pages/StateHookPage/StateHook";
+import About from "./pages/About/About";
+import Community from "./pages/Community/Community";
+import Resources from "./pages/Resources/Resources";
+import Users from "./pages/Users/Users";
+import User from "./pages/Users/UserPage";
+import ErrorPage from "./pages/Error/Error";
 import usersData from "./data/users.json";
 
 import {

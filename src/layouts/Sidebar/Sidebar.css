@@ -27,18 +27,18 @@ a {
   text-decoration: none;
 }
 
-a,
-a::before {
+.sidebar a,
+.sidebar a::before {
   transition: all 0.4s ease;
 }
 
-a:hover,
-a.active {
+.sidebar a:hover,
+.sidebar a.active {
   color: #5bcae8;
 }
 
-a:hover::before,
-a.active::before {
+.sidebar a:hover::before,
+.sidebar a.active::before {
   content: "";
   position: absolute;
   left: -10px;

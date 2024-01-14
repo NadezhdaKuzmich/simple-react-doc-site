@@ -89,17 +89,24 @@ ul {
 }
 
 .users li {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 18px;
   cursor: pointer;
 }
 
 .users li::before {
   content: "";
-  display: inline-block;
+  position: absolute;
+  top: 8px;
+  left: -18px;
   width: 10px;
   height: 10px;
   background: #5bcae8;
   border-radius: 50%;
-  margin-right: 8px;
 }
 
 .user-page p {
@@ -114,4 +121,24 @@ ul {
 
 .user-page b {
   color: #0b576a;
+}
+
+.users a {
+  transition: all 0.4s ease;
+}
+
+.users a:hover {
+  color: #5bcae8;
+}
+
+.delete-btn {
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  transition: color 0.4s ease;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #c44444;
 }
